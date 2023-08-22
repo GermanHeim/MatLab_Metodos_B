@@ -8,6 +8,5 @@ function output = cosaprox(x, k)
     for n = 0:k
         termino = (-1)^n * x^(2*n) / factorial(2*n);
         output = output + termino;
-        disp(termino)
     end
 end

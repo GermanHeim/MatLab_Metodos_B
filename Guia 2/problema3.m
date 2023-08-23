@@ -5,13 +5,13 @@ clear all
 clc
 
 n=1;
-error_rel_porc = 100 * abs((cosaprox(pi/3, n) - cos(pi/3))  / cos(pi/3));
-dif_rel_porc = 100 * abs((cosaprox(pi/3, n) - cosaprox(pi/3, n-1)) / (cosaprox(pi/3, n-1)));
+error_rel_porc = 100 * abs((cosaprox(pi/4, n) - cos(pi/4))  / cos(pi/4));
+dif_rel_porc = 100 * abs((cosaprox(pi/4, n) - cosaprox(pi/4, n-1)) / (cosaprox(pi/4, n-1)));
 
 while error_rel_porc >= 1 || dif_rel_porc >= 1
     n=n+1;
-    error_rel_porc = 100 * abs((cosaprox(pi/3, n) - cos(pi/3))  / cos(pi/3));
-    dif_rel_porc = 100 * abs((cosaprox(pi/3, n) - cosaprox(pi/3, n-1)) / (cosaprox(pi/3, n-1)));
+    error_rel_porc = 100 * abs((cosaprox(pi/4, n) - cos(pi/4))  / cos(pi/4));
+    dif_rel_porc = 100 * abs((cosaprox(pi/4, n) - cosaprox(pi/4, n-1)) / (cosaprox(pi/4, n-1)));
 end
 
 % Aca la aproximación del coseno es igual para un n y un n+1 si n es impar

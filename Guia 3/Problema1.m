@@ -1,10 +1,14 @@
 % German Heim
 % Ej 1
+close all
+clear all
+clc
+
 format long
+syms X
 
 h=0:0.05:0.2;
 centro=0;
-syms X
 f=exp(X);
 
 ycent=[];

@@ -24,7 +24,7 @@ k = -(Q_x0 / dtdx_x_0);
 
 % Inciso B
 % Para calcular dtdx en x=0.2 podemos hacer extrapolación de Richardson
-dtdx_x_0_2 = richardson((T(5) - T(1))/(2*0.2), (T(4) - T(2))/(2*0.1)); % Orden h^4
+dtdx_x_0_2 = richardson((T(4) - T(2))/(2*0.1), (T(5) - T(1))/(2*0.2)); % Orden h^4
 Q_x_0_2 = -k*dtdx_x_0_2;
 
 % Inciso C

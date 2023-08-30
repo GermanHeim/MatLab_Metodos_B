@@ -17,7 +17,7 @@ f_der_adel_ord_h2 = (-subs(f, centro+2*h) + 4*subs(f, centro+h) - 3*subs(f, cent
 f_der_atras_ord_h2 = (3*subs(f, centro) - 4*subs(f, centro-h) + subs(f, centro-2*h))/(2*h);
 f_der_central_ord_h2 = dif_centrada(f, centro, h);
 f_der_central_ord_h4 = (-subs(f, centro+2*h) + 8*subs(f, centro+h) - 8*subs(f, centro-h) + subs(f, centro-2*h))/(12*h);
-f_der_real = subs(f, centro); % Omitimos derivar ya que la derivada de e^t es e^t
+f_der_real = subs(diff(f, 1), centro);
 
 error_rel_cent_ord_h2=abs((f_der_central_ord_h2 - f_der_real)/(f_der_real));
 error_rel_cent_ord_h4=abs((f_der_central_ord_h4 - f_der_real)/(f_der_real));

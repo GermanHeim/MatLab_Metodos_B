@@ -16,7 +16,7 @@ while iteraciones_realizadas <= N
     xr = xu - (f(xu)*(xl-xu))/(f(xl)-f(xu));
     iteraciones_realizadas = iteraciones_realizadas + 1;
     if f(xr) ~= 0
-        error = 100 * abs((xr-xr_viejo)/(xr+num_aux))*100;
+        error = 100 * abs((xr-xr_viejo)/(xr+num_aux));
         disp(error)
     end
     test = f(xl)*f(xr);
@@ -32,5 +32,6 @@ while iteraciones_realizadas <= N
     end
 end
 output=xr;
+disp(output);
 end
 

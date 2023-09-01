@@ -23,8 +23,8 @@ raiz_f = falsa_posicion(f, xl, xu, tol, N); % xr = 14.7802, 4 iteraciones,
 f_inc_c = @(x) x^10 - 1;
 xl_c = 0.5;
 xu_c = 1.7;
-raiz_c_falsa = falsa_posicion(f_inc_c, xl_c, xu_c, tol, N); % 14 iteraciones
-raiz_c_bisec = biseccion(f_inc_c, xl_c, xu_c, tol, N); % 14 iteraciones
+raiz_c_falsa = falsa_posicion(f_inc_c, xl_c, xu_c, tol, N); % 59 iteraciones
+raiz_c_bisec = biseccion(f_inc_c, xl_c, xu_c, tol, N); % 7 iteraciones
 
 %Esto se debe a que, en la funcion x^10 - 1, la raiz no se encuentra
 %cercana al punto mas proximo a cero, y se comporta de manera inesperada

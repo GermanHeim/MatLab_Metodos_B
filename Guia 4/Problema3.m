@@ -11,8 +11,8 @@ xu = 16;
 tol = 0.5;
 N = 10000;
 f = @(c) ((667.38/c)*(1-exp(-0.146843*c))-40);
-raiz_f = falsa_posicion(f, xl, xu, tol, N); % xr = 14.7802, 4 iteraciones, 
-% 0,0961 error aproximado y relativo porcentual
+raiz_f = falsa_posicion(f, xl, xu, tol, N); % xr = 14.7942, 2 iteraciones, 
+% 0,0845 error aproximado y relativo porcentual
 
 % Se puede observar que, en este caso, el metodo de regula falsi converge
 % en un menor numero de iteraciones, debido a que toma en cuenta

@@ -7,7 +7,7 @@ function output = falsa_posicion(f, xl, xu, tol, N)
 
 iteraciones_realizadas = 0;
 xr = xu;
-num_aux = 1*e-10;
+num_aux = 1.0e-10;
 
 while iteraciones_realizadas <= N
     disp(['Numero de iteracion: ', num2str(iteraciones_realizadas)]);
@@ -15,7 +15,7 @@ while iteraciones_realizadas <= N
     xr_viejo = xr;
     xr = xu - (f(xu)*(xl-xu))/(f(xl)-f(xu));
     iteraciones_realizadas = iteraciones_realizadas + 1;
-    if xr ~= 0
+    if f(xr) ~= 0
         error = 100 * abs((xr-xr_viejo)/(xr+num_aux))*100;
         disp(error)
     end

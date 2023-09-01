@@ -18,6 +18,9 @@ while iteraciones_realizadas <= N
     if f(xr) ~= 0
         error = 100 * abs((xr-xr_viejo)/(xr+num_aux));
         disp(error)
+    else
+        output=xr;
+        break
     end
     test = f(xl)*f(xr);
     if test < 0

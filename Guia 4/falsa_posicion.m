@@ -4,12 +4,13 @@ function output = falsa_posicion(f, xl, xu, tol, N)
 % número máximo de iteraciones (N). La función debe arrojar como resultado (parámetro
 % de salida) el valor de la raíz obtenido en la última iteración (xk),
 % El criterio de convergencia es el de error relativo aproximado porcentual
+format long
 
 iteracion = 0;
 xr = xu;
 num_aux = 1.0e-10;
 
-while iteracion <= N
+while iteracion < N
     iteracion = iteracion + 1;
     disp(['Numero de iteracion: ', num2str(iteracion)]);
     disp([xl, xu])

@@ -10,7 +10,7 @@ iteracion = 0;
 xr = xu;
 num_aux = 1.0e-10;
 
-while iteracion <= N
+while iteracion < N
     iteracion = iteracion + 1;
     disp(['Numero de iteracion: ', num2str(iteracion)]);
     disp([xl, xu])

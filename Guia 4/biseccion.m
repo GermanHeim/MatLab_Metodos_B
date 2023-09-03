@@ -4,17 +4,18 @@ function output = biseccion(f, xl, xu, tol, N)
 % número máximo de iteraciones (N). La función debe arrojar como resultado (parámetro
 % de salida) el valor de la raíz obtenido en la última iteración (xk),
 % El criterio de convergencia es el de error relativo aproximado porcentual
+format long
 
-iteraciones_realizadas = 0;
+iteracion = 0;
 xr = xu;
 num_aux = 1.0e-10;
 
-while iteraciones_realizadas <= N
-    disp(['Numero de iteracion: ', num2str(iteraciones_realizadas)]);
+while iteracion <= N
+    iteracion = iteracion + 1;
+    disp(['Numero de iteracion: ', num2str(iteracion)]);
     disp([xl, xu])
     xr_viejo = xr;
     xr = (xl+xu)/2;
-    iteraciones_realizadas = iteraciones_realizadas + 1;
     if f(xr) ~= 0
         error = 100 * abs((xr-xr_viejo)/(xr+num_aux));
         disp(error)

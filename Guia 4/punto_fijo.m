@@ -5,7 +5,7 @@ function output = punto_fijo(f, x0, tol, N)
 g = @(x) f(x) + x; % Calcula la funcion a la cual se le suma x
 iteracion=0;
 raiz=g(x0);
-num_auxiliar = 10.0e-10;
+num_auxiliar = 1.0e-10;
 
 while iteracion <= N
     iteracion = iteracion + 1;

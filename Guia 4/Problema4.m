@@ -4,7 +4,7 @@ close all
 clear all
 clc
 
-f=@(x) exp(-x)-x;
+f=@(x) exp(-x)-x; % No necesitamos pasar la funcion despejada, por mi funcion es god y la despeja
 x0=0;
 tol=1.5;
 N=1000;

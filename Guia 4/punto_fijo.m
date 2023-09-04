@@ -5,11 +5,13 @@ function output = punto_fijo(f, x0, tol, N)
 g = @(x) f(x) + x; % Calcula la funcion a la cual se le suma x
 iteracion=0;
 raiz=g(x0);
-while iteracion < N
+num_auxiliar = 10.0e-10;
+
+while iteracion <= N
     iteracion = iteracion + 1;
     raiz_vieja=raiz;
     raiz=g(raiz);
-    error_aprox_relativo_porcentual = 100 * abs((raiz_vieja - raiz)/(raiz));
+    error_aprox_relativo_porcentual = 100 * abs((raiz_vieja - raiz)/(raiz+num_auxiliar));
 
     disp(['Iteracion N° ', num2str(iteracion)])
     disp(['Aprox. actual de la raiz: ', num2str(raiz)]);

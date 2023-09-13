@@ -22,7 +22,6 @@ set(f1, 'Color', 'red')
 f2 = ezplot(X1-X2, [-1 , 2.5]);
 set(f2, 'Color', 'blue')
 
-
 newton_raphson_multivariable(F, J, x0, 0.00001, 100)
 
 % Al utilizar [1; 1] como x0 el J que es [2(x1−1),​ 2(x2−1); 1, −1] se

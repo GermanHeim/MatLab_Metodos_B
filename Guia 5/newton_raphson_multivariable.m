@@ -2,7 +2,7 @@ function output = newton_raphson_multivariable(F, J, x0, tol, N)
 %NEWTON_RHAPSON_MULTIVARIABLE Metodo de Newton Rhapson Multivariable
 %  F es una matriz funcion handle de una variable X la igual que J, x0 (vect) un vector de puntos
 %  iniciales, tol una tolerancia (int), y N un numero maximo de iteraciones
-%  (int)
+%  (int).
 F_eval=[];
 J_eval=[];
 iteracion = 0;

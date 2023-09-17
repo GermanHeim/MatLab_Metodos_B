@@ -4,7 +4,7 @@ function output = newton_raphson_discretizado_2x2(F, f1, f2, x0, tol, N)
 % F es una matriz funcion handle
 %  f1 es una funcion dependiente de x1 y x2, al igual que f2
 %  x0 (vect) un vector de puntos iniciales, tol una tolerancia (int), 
-% y N un numero maximo de iteraciones (int)
+% y N un numero maximo de iteraciones (int). Mirar Problema6.
 iteracion = 0;
 F_eval=[];
 B=[];

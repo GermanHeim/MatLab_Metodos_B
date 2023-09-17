@@ -18,7 +18,7 @@ while iteracion <= N
     ro = linsolve(J_eval, -F_eval);
 
     x0=ro+x0;
-
+    F_eval = F(x0);
     if norm(F_eval)<=tol
         disp('Raices encontradas');
         disp(x0);

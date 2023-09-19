@@ -21,7 +21,7 @@ while iteracion <= N
     df1dx1 = (f1([deltax(1)+x0(1), x0(2)])-f1([x0(1), x0(2)])) / deltax(1);
     df1dx2 = (f1([x0(1), deltax(2)+x0(2)])-f1([x0(1), x0(2)])) / deltax(2);
     df2dx1 = (f2([deltax(1)+x0(1), x0(2)])-f2([x0(1), x0(2)])) / deltax(1);
-    df2dx2 = (f1([x0(1), deltax(2)+x0(2)])-f1([x0(1), x0(2)])) / deltax(2);
+    df2dx2 = (f2([x0(1), deltax(2)+x0(2)])-f2([x0(1), x0(2)])) / deltax(2);
 
     J=[df1dx1, df1dx2; df2dx1 df2dx2];
 

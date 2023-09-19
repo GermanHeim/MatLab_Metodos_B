@@ -16,3 +16,4 @@ F=@(X) F(X(1), X(2)); % Para poder reemplazar con un vector x0
 J=@(X) J(X(1), X(2));
 
 broyden(F, J, x0, 0.05, 50)
+broyden_inv(F, J, x0, 0.05, 100)

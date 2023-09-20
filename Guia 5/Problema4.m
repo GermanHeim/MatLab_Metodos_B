@@ -25,7 +25,8 @@ newton_raphson_multivariable_ejercicio_4(F, Js, [-10, -10], 1.0e-7, 100)
 newton_raphson_multivariable_ejercicio_4(F, Js, [100, 100], 1.0e-7, 100)
 newton_raphson_multivariable_ejercicio_4(F, Js, [-100, -100], 1.0e-7, 100)
 
-% 2 para cualquier x0
+% 1 para cualquier x0
 % En el caso de un sistema lineal, el Jacobiano es constante y no cambia a
 % medida que se realizan iteraciones
 % por lo que el metodo converge directamente a la solucion
+% converge en 2 por que usa error relativo y requiere 2 iteraciones

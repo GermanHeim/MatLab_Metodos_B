@@ -27,8 +27,8 @@ iteracion = 1;
 while iteracion <= N
     iteracion = iteracion + 1;
     B_eval=B_eval+(F(x0)-F(x0_viejo)-B_eval*ro)*transpose(ro)/(transpose(ro)*ro);
-    disp(B_eval)
     ro=linsolve(B_eval, -F(x0));
+    x0_viejo=x0;
     x0=x0+ro;
 
     F_eval = F(x0);
@@ -36,7 +36,7 @@ while iteracion <= N
         disp('Raices encontradas');
         disp(x0);
         disp(['Iteración: ', num2str(iteracion)])
-        return
+        break
     end
 end
 output=x0;

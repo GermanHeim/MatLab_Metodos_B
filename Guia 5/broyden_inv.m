@@ -27,9 +27,11 @@ H=inv(B_eval);
 iteracion = 1;
 while iteracion <= N
     iteracion = iteracion + 1;
-    H=H-(H*((F(x0)-F(x0_viejo))-ro)*transpose(ro)*H)/(transpose(ro)*H*(F(x0)-F(x0_viejo)));
+    y=F(x0)-F(x0_viejo);
+    H=H-((H*y-ro)*transpose(ro)*H)/(transpose(ro)*H*y);
     
     ro=-H*F(x0);
+    x0_viejo=x0;
     x0=x0+ro;
 
     F_eval = F(x0);
@@ -37,7 +39,7 @@ while iteracion <= N
         disp('Raices encontradas');
         disp(x0);
         disp(['Iteración: ', num2str(iteracion)])
-        return
+        break
     end
 end
 output=x0;

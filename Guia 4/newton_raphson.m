@@ -12,6 +12,7 @@ xr=x0;
 num_auxiliar = 10.0e-10;
 
 while iteracion <= N
+    iteracion = iteracion + 1;
     xr_viejo=xr;
     xr=xr-(f(xr)/f_derivada(xr));
     error_aprox_relativo_porcentual = 100 * abs((xr_viejo - xr)/(xr + num_auxiliar));

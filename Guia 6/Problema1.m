@@ -13,7 +13,7 @@ x0 = 2;
 tol = 0;
 N=3;
 
-optimo = newton_optimo(Fprima, Fprimasegunda, x0, tol, 3, "max");
+optimo = newton_optimo(Fprima, Fprimasegunda, x0, tol, N, "max");
 hold on
 grid on
 fplot(F, [-2, 2])

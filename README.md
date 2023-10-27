@@ -16,3 +16,5 @@
 [Guía 7](<./Guia 7/>): Regresión
 
 [Guía 8](<./Guia 8/>): Interpolación
+
+[Guía 9](<./Guia 9/>): Integración Numérica

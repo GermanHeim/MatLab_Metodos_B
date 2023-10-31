@@ -23,7 +23,7 @@ c1 = c0;
 x0 = -0.577350269;
 x1 = -x0;
 
-func_transformada = @(X) (2*(3/2 + 1/2 .* X + 3/(3/2 + 1/2 .* X)))^2 * 1/2;
+func_transformada = @(X) (2*(3/2 + 1/2 .* X) + 3/(3/2 + 1/2 .* X))^2 * 1/2;
 % x=3/2 + 1/2*Xd ,dx = 1/2 dXd
 int_gauss_2ptos = c0*func_transformada(x0) + c1*func_transformada(x1);
 

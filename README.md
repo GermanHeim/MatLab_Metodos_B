@@ -18,3 +18,5 @@
 [Guía 8](<./Guia 8/>): Interpolación
 
 [Guía 9](<./Guia 9/>): Integración Numérica
+
+[Guía 10](<./Guia 10/>): Ecuaciones diferenciales ordinarias

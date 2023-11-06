@@ -11,4 +11,3 @@ while x(i) < b
     y0=y(i-1)+h*F(x(i-1), y(i-1));
     y(i)=y(i-1)+h*(F(x(i-1), y(i-1)) + F(x(i), y0))/2;
 end
-

@@ -9,6 +9,6 @@ y2=val_2;
 while x(i) < b
     i=i+1;
     x(i)=x(i-1)+h;
-    y1(i)=F1(x(i-1), y1(i-1), y2(i-1));
-    y2(i)=F2(x(i-1), y1(i-1), y2(i-1));
+    y1(i)=y1(i-1)+h*F1(x(i-1), y1(i-1), y2(i-1));
+    y2(i)=y2(i-1)+h*F2(x(i-1), y1(i-1), y2(i-1));
 end

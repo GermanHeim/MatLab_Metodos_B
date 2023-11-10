@@ -1,4 +1,4 @@
-% Ej 1
+% Ej 2
 % German Heim
 clear all
 close all
